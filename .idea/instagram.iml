@@ -105,6 +105,7 @@
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.20.3, RVM: ruby-2.6.0 [instagram]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, RVM: ruby-2.6.0 [instagram]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.9, RVM: ruby-2.6.0 [instagram]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="toastr-rails (v1.0.3, RVM: ruby-2.6.0 [instagram]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v5.2.0, RVM: ruby-2.6.0 [instagram]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, RVM: ruby-2.6.0 [instagram]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.5, RVM: ruby-2.6.0 [instagram]) [gem]" level="application" />

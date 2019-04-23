@@ -17,8 +17,8 @@ hide-text"%>
     <li class="nav-item core-sprite notification-icon hide-text">
       <a class="nav-link" href="#">Notification</a>
     </li>
-    <li class="nav-item core-sprite profile-icon hide-text">
-      <a class="nav-link" href="#">Profile</a>
+    <li class="nav-item">
+      <%= link_to "Profile", user_path(current_user), class: "nav-link core-sprite profile-icon hide-text"%>
     </li>
   </ul>
 </div>

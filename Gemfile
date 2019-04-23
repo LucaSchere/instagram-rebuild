@@ -7,6 +7,7 @@ gem 'sqlite3', '~> 1.3.6'
 gem 'devise'
 gem 'bootstrap','~> 4.0.0'
 gem 'jquery-rails'
+gem 'toastr-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
