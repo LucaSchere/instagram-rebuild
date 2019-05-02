@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.0'
 
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.0'
 gem 'sqlite3', '~> 1.3.6'
 gem 'devise'
 gem 'bootstrap','~> 4.0.0'
