@@ -1,61 +1,63 @@
 @import "bootstrap";
 @import "toastr";
+@import "dropzone/dropzone";
 
-body{
+body {
   background-color: #fafafa;
   font-size: 14px;
   color: #262626;
 }
 
-.core-sprite{
+.core-sprite {
   background-image: image-url("core-sprite-2x.png");
   background-size: 405px 379px;
   background-repeat: no-repeat;
 }
 
-.navbar-brand{
+.navbar-brand {
   background-position: -176px 0;
   height: 35px;
   width: 176px;
+  width: 176px;
 }
 
-.hide-text{
+.hide-text {
   display: block;
   overflow: hidden;
-  text-indent: 200%;
+  text-indent: 110%;
   white-space: nowrap;
 }
 
-.explore-icon{
+.explore-icon {
   background-position: -50px -355px;
-  height: 24px;
   width: 24px;
+  height: 24px;
 }
 
-.notification-icon{
+.notification-icon {
   background-position: -353px -298px;
-  height: 24px;
   width: 24px;
+  height: 24px;
 }
 
-.profile-icon{
+.profile-icon {
   background-position: -308px -176px;
-  height: 24px;
   width: 24px;
+  height: 24px;
 }
 
-.nav-item:not(first-child){
+.nav-item:not(first-child) {
   margin-left: 30px;
 }
 
-.navbar{
+.navbar {
   background-color: #fff;
   border-bottom: 1px solid rgba(0,0,0,.0975);
   height: 77px;
 }
 
-.landing-left{
-  .dummy-phone{
+.landing-left {
+  .dummy-phone {
     background-image: image-url("dummy-phone-2x.png");
     background-repeat: no-repeat;
     background-position: right 0;
@@ -65,54 +67,53 @@ body{
     margin-left: -35px;
     margin-right: -15px;
   }
-  .screen-shot{
+  .screen-shot {
     position: absolute;
     top: 99px;
     right: 63px;
 
-    .item{
+    .item {
       position: absolute;
     }
   }
 }
 
-.landing-right{
-  .form-login{
+.landing-right {
+  .form-login {
     width: 350px;
 
-    form{
+    form {
       padding: 0 40px;
 
-      .btn-primary{
+      .btn-primary {
         width: 100%;
         line-height: 14px;
         font-size: 14px;
         font-weight: 600;
       }
 
-      input{
+      input {
         border: 1px solid #efefef;
       }
 
-      .form-check-label{
+      .form-check-label {
         padding: 0;
         font-size: 15px;
         color: #262626;
       }
     }
 
-    .brand-name-img{
+    .brand-name-img {
       margin: 22px auto 8px;
     }
   }
 
-  .redirect-links{
+  .redirect-links {
     width: 350px;
   }
 }
 
-
-.box{
+.box {
   background-color: #fff;
   border: 1px solid #e6e6e6;
   border-radius: 1px;
@@ -120,7 +121,7 @@ body{
   margin: 0 0 10px;
 }
 
-.brand-name-img{
+.brand-name-img {
   background-position: 0 0;
   height: 51px;
   width: 175px;
@@ -132,48 +133,31 @@ footer .nav-item {
   font-weight: bold;
 }
 
-.light-color {
-  color: #999;
+.signing-info {
+  margin-top: 15px;
+  color: rgba(0,0,0,0.5);
 }
 
-.carousel-fade {
-  .carousel-item.active{
-    opacity: 1;
-    display: block;
-  }
-
-  .carousel-item {
-    transition: opacity 0.6s ease-in-out;
-    opacity: 0;
-    position: relative;
-    display: block;
-  }
-
-  .carousel-item:not(.active) {
-    position: absolute;
-    top: 0px;
-  }
-}
-
-.profile-wrapper{
+.profile-wrapper {
   padding: 60px 0;
-  border-bottom: 1px solid #efefef;
 
   .username {
     font-size: 32px;
     line-height: 40px;
     font-weight: 200;
   }
-  .email{
+
+  .email {
     font-size: 16px;
     font-weight: bold;
   }
 }
 
-.round-img{
+.round-img {
   border-radius: 50%;
 }
-.common-btn{
+
+.common-btn {
   height: 28px;
   line-height: 24px;
   padding: 0 24px;
@@ -183,10 +167,10 @@ footer .nav-item {
 
 .edit-profile-btn {
   margin: 5px 0 0 15px;
-  font-weight: bold;
+  font-weight: bold
 }
 
-.setting{
+.setting {
   margin: 7px 0 0 10px;
   background-color: transparent;
   background-position: -125px -355px;
@@ -194,16 +178,17 @@ footer .nav-item {
   width: 24px;
   border: none;
 }
-.setting:hover{
+
+setting:hover {
   cursor: pointer;
 }
+
 .edit-profile-wrapper {
   margin: 60px 0 0;
   .left-col {
     border: 1px solid #dbdbdb;
     padding: 0;
     background-color: white;
-
     .list-group-item {
       border: none;
       color: #262626;
@@ -211,7 +196,6 @@ footer .nav-item {
       font-size: 16px;
       border-left: 2px solid transparent;
     }
-
     .list-group-item:first-child {
       font-weight: bold;
       border-left-color: #262626;
@@ -235,5 +219,126 @@ footer .nav-item {
     .form-group {
       font-size: 16px;
     }
+  }
+}
+
+.post-author-icon{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.upload-photos-icon:hover {
+  cursor: pointer;
+}
+
+.dz-preview.dz-image-preview {
+  margin: 2px;
+}
+
+.dz-image{
+  border-radius: 0px !important;
+
+  img {
+    width: 100%;
+  }
+}
+
+.dz-remove {
+  @extend .core-sprite;
+  @extend .hide-text;
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  z-index: 20;
+  width: 18px;
+  height: 18px;
+  background-position: -386px -25px;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s liner;
+  transition: opacity 0.2s liner;
+}
+
+.dropzone .dropzone-preview:hover .dz-remove {
+  opacity: 1;
+}
+
+.upload-photos-icon {
+  height: 120px;
+  width: 120px;
+  border: 2px dashed #dddfe2;
+  border-radius: 2px;
+  padding: 48px;
+  display: inline-block;
+  margin: 2px;
+}
+
+.post {
+  .card-header {
+    background-color: white;
+  }
+  .card-body {
+    padding: 5px 16px 5px;
+  }
+  .actions{
+    margin: 12px 0;
+  }
+  .post-time {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .comment-input{
+    font-size: 14px;
+    resize: none;
+  }
+  .previous-btn {
+    background-position: -281px -280px;
+    height: 30px;
+    opacity: 1;
+    width: 30px;
+  }
+  .next-btn{
+    background-position: -353px 0px;
+    height: 30px;
+    opacity: 1;
+    width: 30px;
+  }
+}
+
+.love {
+  background-position: -325px -329px;
+  height: 24px;
+  width: 24px;
+}
+.loved {
+  @extend .love;
+  background-position: -200px -330px;
+}
+.comment{
+  @extend .love;
+  background-position: -150px -355px;
+}
+.bookmark{
+  @extend .love;
+  background-position: -150px -355px;
+}
+.bookmarked {
+  @extend .love;
+  background-position: -353px -273px;
+}
+
+.no-text-decoration:hover {
+  text-decoration: none;
+  color: #262626;
+}
+
+.normal-color {
+  color: #262626;
+}
+
+.post {
+  .card-header{
+    background-color: white;
   }
 }

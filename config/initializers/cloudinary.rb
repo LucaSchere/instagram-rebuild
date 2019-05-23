@@ -1,3 +1,7 @@
-cloudinary_cloud_name = "dysldvneq"
-cloudinary_api_key =  "634195566277374"
-cloudinary_api_secret = "yIacnIQLKpOnYKF9I2-ZYSBrud0"
+
+Cloudinary.config do |config|
+  config.cloud_name = ENV["cloudinary_cloud_name"]
+  config.api_key = ENV["cloudinary_api_key"]
+  config.api_secret = ENV["cloudinary_api_secret"]
+  config.cdn_subdomain = true
+end
