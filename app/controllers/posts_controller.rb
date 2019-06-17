@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_action :find_post, only: [:show, :destroy]
 
   def index
-    @posts = Post.all.limit(10).includes(:photos, :user).order('created_at desc')
+    @posts = Post.all.limit(10).includes(:photos, :user, :likes).order('created_at desc')
     @post = Post.new
   end
 
@@ -25,11 +25,22 @@ class PostsController < ApplicationController
   end
 
   def show
-    @photos =   @post.photos
+    @photos = @post.photos
+    @likes = @post.likes.includes(:user)
+    @is_liked = @post.is_liked(current_user)
   end
 
   def destroy
-
+    if @post.user == current_user
+      if @post.destroy
+        flash[:notice] = "Post deleted!"
+      else
+        flash[:alert] = "Something went wrong..."
+      end
+    else
+      flash[:alert] = "You don't have the permission to delete this post!"
+    end
+    redirect_to root_path
   end
 
   private

@@ -1,26 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
-    <%=link_to "Icon", root_path, class: "navbar-brand core-sprite
-hide-text"%>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
+    <%= link_to "Icon", root_path, class: "navbar-brand core-sprite hide-text" %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <form class="form-inline my-2 my-lg-0 ml-md-auto">
-    <input class="form-control mr-sm-2 text-center" type="search" placeholder="Search" aria-label="Search">
-  </form>
-  <ul class="navbar-nav ml-md-auto">
-    <li class="nav-item">
-      <a class="nav-link core-sprite explore-icon hide-text" href="#">Explore</a>
-    </li>
-    <li class="nav-item core-sprite notification-icon hide-text">
-      <a class="nav-link" href="#">Notification</a>
-    </li>
-    <li class="nav-item">
-      <%= link_to "Profile", user_path(current_user), class: "nav-link core-sprite profile-icon hide-text"%>
-    </li>
-  </ul>
-</div>
-</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <%= form_tag users_path, method: :get, class: "form-inline my-2 my-lg-0 ml-md-auto", id: "users-search", remote: true do %>
+        <%= text_field_tag :term, params[:term], class: "form-control mr-sm-2 text-center common-btn", placeholder: "Search", autocomplete: "off" %>
+        <div id="users-result"></div>
+      <% end %>
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item">
+          <a class="nav-link core-sprite explore-icon hide-text" href="#">Explore</a>
+        </li>
+        <li class="nav-item core-sprite notification-icon hide-text">
+          <a class="nav-link" href="#">Notification</a>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Profile", user_path(current_user), class: "nav-link core-sprite profile-icon hide-text" %>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

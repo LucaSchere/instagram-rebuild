@@ -19,7 +19,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
   process :tags => ['post_picture']
 
   version :standard do
-    process :resize_to_fill => [1080, 1080, :center]
+    process :resize_to_fill => [567, 573, :center]
   end
 
   version :thumbnail do
