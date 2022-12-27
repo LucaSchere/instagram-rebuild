@@ -1,24 +1,13 @@
-# README
+# instagram rebuild on rails
+Written by Luca Scherer and his teachers in the 2nd year of his apprenticeship.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## features
+* upload posts
+* comment posts
+* Mail dispatch
+* etc.
 
-Things you may want to cover:
+## how to use
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Clone https://github.com/LucaSchere/instagram-rebuild.git and run `bin/rails server`.  
+Have fun!
